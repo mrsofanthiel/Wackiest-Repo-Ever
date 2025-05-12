@@ -172,8 +172,8 @@
         var floppyRequired = (!!this.getParameterByName("fda") || !!this.getParameterByName("fdb")) | 0;
         console.log(floppyRequired);
         config.push("floppy=" + floppyRequired);
-        var mem = this.getIntegerByName("mem", 32),
-            vgamem = this.getIntegerByName("vgamem", 4);
+        var mem = this.getIntegerByName("mem", 64),
+            vgamem = this.getIntegerByName("vgamem", 32);
 
         function roundUp(v) {
             v--;
